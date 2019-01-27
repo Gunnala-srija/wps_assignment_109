@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>List Of Files</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="login.js"></script>
+        <style>
+            *{
+                font-family:  Helvetica, sans-serif;
+                font-size:20px;
+            }
+            #header{
+                background-color: #21295C;
+                color:white;
+                padding:10px;
+                border-radius:5px;
+            }
+            #logout{
+                float:right;
+                background-color:rgb(0, 128, 122);
+                border:2px solid rgb(0, 109, 128);
+                border-radius:10px; 
+                margin-right:50px;
+                text-decoration: none;
+                padding: 2px 15px;
+                color:white;
+            }
+            #logout:hover,#upload:hover{
+                cursor: hand;
+            }
+            #upload{
+                background-color:rgb(0, 128, 122);
+                border:2px solid rgb(0, 109, 128);
+                border-radius:10px; 
+                margin-right:50px;
+                text-decoration: none;
+                padding: 2px 15px;
+                color:white;
+            }
+            #upload:focus{
+                outline:none;
+            }
+            table{
+                margin:10px;
+                background-color: #F3F3F3;
+                border-collapse: collapse;
+                width: 100%;
+                margin: 15px 0;
+            }
+            th {
+                background-color: #FE4902;
+                color: #FFF;
+                cursor: pointer;
+                padding: 5px 10px;
+            }
+            th small {
+                font-size: 9px; 
+            }
+            td, th {
+            text-align: center;
+            font-size:15px;
+            padding: 15px 20px;
+            border-radius:10px;
+            }
+            tr:nth-of-type(odd) {
+            background-color: #E6E6E6;
+            }
+            th:hover{
+                cursor: auto;
+            }
+            td:hover{
+                background-color:#CACACA;
+            }
+            td a{
+                text-decoration: none;
+                color:black;
+                font-size:15px;
+            }
+            td a:hover{
+                text-decoration: underline;
+                cursor:hand;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1 align="center">Welcome to your drivespace
+                <a href="login.html" id="logout">Logout</a>
+            </h1>
+        </div>
+        <table cellspacing="10" >
+            <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Type</th>
+                <th>Size <small>(kilo bytes)</small></th>
+                <th>Last Modified</th>
+            </tr>
+        </thead>
+            <tr>
+                <td><a href="#">File1.txt</a></td>
+                <td>Text File</td>
+                <td>32</td>
+                <td>Jan 26 2019 3:43 PM</td>
+            </tr>
+            <tr>
+                    <td><a href="#">File2.jpg</a></td>
+                    <td>Image file</td>
+                    <td>32,000</td>
+                    <td>Jan 26 2019 4:00 PM</td>
+                </tr>
+                <tr>
+                        <td><a href="#">File3.txt</a></td>
+                        <td>Text File</td>
+                        <td>42</td>
+                        <td>Jan 26 2019 3:45 PM</td>
+                    </tr>
+        </table>
+        <div style="text-align:center;margin-left:450px;">
+                <label for="files" id="upload">Upload  <i class="fa fa-upload"></i></label>
+                <input id="files" style="visibility:hidden;" type="file">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="login.js">
+        </script>
+    </head>
+    <body>
+        <div id="login">
+            <br>
+            <img src="loginpic.png" width="70px" height="70px">
+            <form id="myform" action="details.html" onsubmit="return validate()">
+        <table cellspacing="5px">
+            <tr>
+                <td><i class="fa fa-user icon" style="color:lightblue"></i>  Username:</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="rollno" name="rollno" placeholder="Enter your Roll no"></td>
+            </tr>
+            <tr>
+                <td><p id="uerror" style="color:red;visibility: hidden;font-size:12px;padding: 0">Enter some username</p></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-key icon" style="color:lightblue"></i>  Password:</td>
+            </tr>
+            <tr>
+                <td><input type="password" id="pass" name="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td><p id="perror" style="color:red;visibility: hidden;font-size: 12px;padding:0">Enter some password</p></td>
+            </tr>
+            <tr>
+                <td align="center"><button type="submit" onclick="validate()" id="submit">Submit</button></td>
+            </tr>
+        </table>
+        </form>
+        </div>
+    </body>
+</html>

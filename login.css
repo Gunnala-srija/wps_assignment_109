@@ -1,0 +1,40 @@
+body{
+    background-color: #21295C;
+    color:rgb(19, 216, 190);
+}
+*{
+    font-family:  Helvetica, sans-serif;
+    font-size:20px;
+}
+#login{
+    margin: auto auto;
+    margin-top:125px;
+    width:500px;
+    text-align: center;
+    border:3px solid #7D5ACE;
+    border-radius:10px;
+}
+#login table{
+    margin: 20px;
+}
+#rollno,#pass{
+    height:50px;
+    width:450px;
+    border-radius: 10px; 
+    padding:10px;
+}
+#rollno:focus,#pass:focus{
+    outline:none;
+}
+#submit{
+    background-color:rgb(0, 128, 122);
+    border:2px solid rgb(0, 109, 128);
+    padding:10px;
+    border-radius:10px; 
+}
+#submit:hover{
+    cursor: hand;
+}
+#submit:focus{
+    outline: none;
+}
